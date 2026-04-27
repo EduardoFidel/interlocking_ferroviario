@@ -9,7 +9,7 @@ Este proyecto implementa un sistema de control de tráfico ferroviario automatiz
 * **Interfaz de Usuario:** Pantalla LCD de 16x2 que muestra el estado de las vías en tiempo real y semáforos LED (Rojo/Verde).
 
 ## 🛠️ Configuración de Hardware
-[cite_start]El sistema utiliza los siguientes pines del Arduino (definidos en el código)[cite: 41]:
+El sistema utiliza los siguientes pines del Arduino (definidos en el código):
 
 | Componente | Pin Arduino | Descripción |
 | :--- | :---: | :--- |
@@ -23,10 +23,10 @@ Este proyecto implementa un sistema de control de tráfico ferroviario automatiz
 
 ## ⚙️ Lógica de Operación
 El software se basa en una **Máquina de Estados Finitos (FSM)**:
-1.  **IDLE:** Estado de espera. [cite_start]Ambas vías están bloqueadas hasta que se detecta un tren a < 30 cm[cite: 53, 54, 62, 64].
-2.  [cite_start]**VIA_A_ACTIVA:** El servo se mueve a 30°, habilitando el paso para la Vía A[cite: 49].
-3.  [cite_start]**VIA_B_ACTIVA:** El servo se mueve a 150°, habilitando el paso para la Vía B[cite: 51].
-4.  [cite_start]**Detección de Conflicto:** Si ambos sensores detectan presencia simultáneamente, el sistema resuelve la prioridad basándose en el *timestamp* de la primera detección[cite: 66, 67, 68].
+1.  **IDLE:** Estado de espera. Ambas vías están bloqueadas hasta que se detecta un tren a < 30 cm.
+2.  **VIA_A_ACTIVA:** El servo se mueve a 30°, habilitando el paso para la Vía A.
+3.  **VIA_B_ACTIVA:** El servo se mueve a 150°, habilitando el paso para la Vía B.
+4.  **Detección de Conflicto:** Si ambos sensores detectan presencia simultáneamente, el sistema resuelve la prioridad basándose en el *timestamp* de la primera detección.
 
 ## 🚀 Instalación y Uso
 1.  **Estructura de Carpetas:** Asegúrate de que el archivo `.ino` esté dentro de una carpeta con su mismo nombre (esto responde al punto 2 de las sugerencias):
