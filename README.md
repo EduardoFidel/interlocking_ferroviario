@@ -3,10 +3,10 @@
 Este proyecto implementa un sistema de control de tráfico ferroviario automatizado utilizando Arduino. El sistema gestiona el paso de trenes en un sector de vía única compartida, garantizando la seguridad mediante sensores ultrasónicos, señalización visual/auditiva y un cambio de vía motorizado.
 
 ## 📋 Características Principales
-* [cite_start]**Gestión de Prioridades:** Detecta qué tren llega primero a la zona de control (30 cm) y le otorga el paso automáticamente[cite: 66, 67].
-* [cite_start]**Sistema de Interbloqueo:** Bloquea la vía contraria mientras una está activa para prevenir colisiones[cite: 50, 52].
-* [cite_start]**Alerta de Intrusión:** Si un tren ignora la señal de alto y se acerca a menos de 10 cm, se activa una alarma sonora y un aviso en la pantalla LCD[cite: 71, 72, 76, 77].
-* [cite_start]**Interfaz de Usuario:** Pantalla LCD de 16x2 que muestra el estado de las vías en tiempo real y semáforos LED (Rojo/Verde)[cite: 48, 49, 58].
+* **Gestión de Prioridades:** Detecta qué tren llega primero a la zona de control (30 cm) y le otorga el paso automáticamente[cite: 66, 67].
+* **Sistema de Interbloqueo:** Bloquea la vía contraria mientras una está activa para prevenir colisiones[cite: 50, 52].
+* **Alerta de Intrusión:** Si un tren ignora la señal de alto y se acerca a menos de 10 cm, se activa una alarma sonora y un aviso en la pantalla LCD[cite: 71, 72, 76, 77].
+* **Interfaz de Usuario:** Pantalla LCD de 16x2 que muestra el estado de las vías en tiempo real y semáforos LED (Rojo/Verde)[cite: 48, 49, 58].
 
 ## 🛠️ Configuración de Hardware
 [cite_start]El sistema utiliza los siguientes pines del Arduino (definidos en el código)[cite: 41]:
